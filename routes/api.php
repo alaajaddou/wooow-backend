@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ApiController;
 use Illuminate\Http\Request;
 
 /*
@@ -17,7 +18,7 @@ use Illuminate\Http\Request;
 Route::post('login', 'Auth\LoginController@login');
 Route::post('register', 'Auth\RegisterController@create');
 Route::group([
-    'middleware' => ['cors:api'],
+    'middleware' => ['api'],
 ], function ($router) {
     // Route::post('check-auth', 'Auth\LoginController@checkAuth' );
     // catalog api requests
@@ -28,6 +29,7 @@ Route::group([
     Route::group(['middleware' => 'auth:api'], function($route) {
       Route::post('order', 'OrderController@store');
       Route::get('orders', 'OrderController@getOrdersByUser');
+
       Route::get('OrderStatuses', 'OrderController@getOrderStatuses');
       Route::put('cancel-order', 'OrderController@cancelOrder');
       Route::post('create-address', 'UserController@createAddress');

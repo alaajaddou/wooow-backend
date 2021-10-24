@@ -14,7 +14,8 @@ class ApiController extends Controller
     public function __construct() {
 
     }
-    function getAllData() {
+
+    public function getAllData() {
         $allData = [];
         // if app doesn't have session.
             // - categories.
@@ -33,7 +34,7 @@ class ApiController extends Controller
             $allData['orderStatuses'] = OrderStatus::all();
         }
 
-        return response()->json($allData, 200);
+        return response()->json($allData);
     }
 
     /**
