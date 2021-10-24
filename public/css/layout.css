@@ -1,0 +1,82 @@
+body {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.bg-wooow {
+    padding: 10px 20px 15px;
+    line-height: 1rem;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 30px;
+    background: #bcc96d;
+    text-shadow: 1px 1px 1px black;
+}
+
+.navbar.toolbar {
+  padding: 5px;
+  /** background-image: linear-gradient(to right, #8E6801, #FEBE10); **/
+  background-color: #bcc96d;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.item a, .item a:hover, .item a:active, .item a:focus {
+    color: black;
+}
+
+.card-title {
+    font-size: 13px; 
+    white-space: nowrap; 
+    width:100%;  
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.card-img-top {
+    height: 245px;
+    width: 190px;
+    background: url('https://via.placeholder.com/190x245');
+}
+
+.notification-badge {
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    padding: 3px 5px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #bcc96d;
+    border-color: #bcc96d;
+}
+
+.btn-primary:hover {
+    background-color: #bcc96d;
+    border-color: #bcc96d;
+    
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #bcc96d;
+    border-color: #bcc96d;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #c693087d;
+}
